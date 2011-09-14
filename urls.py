@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
 	(r'^admin/', include(admin.site.urls)),
 	(r'^$', 'wordrank.backend.views.index'),
+	(r'^listing/?$','wordrank.backend.views.listing'),
 	(r'^vote/(?P<word_a>(([\w-]|\')+))\/(?P<word_b>(([\w-]|\')+))\/(?P<winner>(\w))','wordrank.backend.views.vote'),
         (r'^favicon.\ico/?', 'django.views.generic.simple.redirect_to', {'url': 'http://media.tomoconnor.eu/tomoconnor/favicon.ico'}),
         (r'^favicon.\png/?', 'django.views.generic.simple.redirect_to', {'url': 'http://media.tomoconnor.eu/tomoconnor/favicon.ico'}),

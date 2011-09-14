@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="keywords" content="tweethappy,twitter,happiness,tweet,lexical, analysis" /> 
+<meta http-equiv="description" content="TweetHappy calculates your Twitter Timeline's overall happiness." /> 
+<title>TweetHappy - Wordrank</title> 
+<link type="text/css" rel="stylesheet" href="http://media.astound.eu/wordrank/css/style.css" media="screen" /> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19992371-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head> 
+<body> 
+<div id="container"> 
+	<div id="header"> 
+		<a href="#"><img src="http://media.astound.eu/wordrank/img/logo.gif" width="267" height="46" alt="TweetHappy" /></a> 
+		<div class="advert"> 
+		</div> 
+	</div> 
+	<div id="body"> 
+<h1>High Scores</h1>
+<table>
+{% for x,y in hl %}
+<tr><td>{{x}}</td><td>{{y}}</td></tr>
+{% endfor %}
+</table>
+
+<h1>Low Scores ({{llcount}})</h2>
+<table>
+{% for x,y in ll %}
+<tr><td>{{x}}</td><td>{{y}}</td></tr>
+{% endfor %}
+</table>
+
+
+				<div class="like_this">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://wordrank.twinhelix.org" data-text="I've been measuring happiness here:" data-count="vertical" data-via="metacheetr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+		</div> 
+	</div> 
+	<div id="footer"> 
+		Brought to you by <a href="http://twitter.com/metacheetr" target="_blank">Tom O'Connor</a> and <a href="http://twitter.com/jamescun" target="_blank">James Cunningham</a>. Powered by <a href="http://twitter.com/" target="_blank">Twitter</a>.</div> 
+ 
+<!-- Alerts for Scripting/Frames disabled --> 
+	<noscript><div class="failalert"><div class="popup"><h1>You have Javascript turned off</h1><p>In order to use TweetHappy correctly, you must have Javascript enabled to view search results. This can be done in your browsers preferences.</p></div></div></noscript> 
+	<noframes><div class="failalert"><div class="popup"><h1>You have Frames disabled</h1><p>In order to use TweetHappy correctly, you must have Frames enabled to view search results. This can be done in your browsers preferences.</p></div></div></noframes> 
+<!-- End Alerts --> 
+</div> 
+</body> 
+</html> 

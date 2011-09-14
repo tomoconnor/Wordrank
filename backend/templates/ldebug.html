@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="keywords" content="tweethappy,twitter,happiness,tweet,lexical, analysis" /> 
+<meta http-equiv="description" content="TweetHappy calculates your Twitter Timeline's overall happiness." /> 
+<title>TweetHappy - Wordrank</title> 
+<link type="text/css" rel="stylesheet" href="http://media.astound.eu/wordrank/css/style.css" media="screen" /> 
+</head> 
+<body> 
+<h1>High Scores ({{hlcount}})</h1>
+<table>
+{% for x,y in hl %}
+<tr><td>{{x}}</td><td>{{y}}</td></tr>
+{% endfor %}
+</table>
+
+<h1>Low Scores ({{llcount}})</h2>
+<table>
+{% for x,y in ll %}
+<tr><td>{{x}}</td><td>{{y}}</td></tr>
+{% endfor %}
+</table>
+
+</body> 
+</html> 
